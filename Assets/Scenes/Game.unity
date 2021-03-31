@@ -271,7 +271,7 @@ MonoBehaviour:
   - {fileID: 922362471415646431, guid: 5ce2ee072ef83d0488166f5f3430c1a4, type: 3}
   - {fileID: 6642755765029892598, guid: 8e7a0b96f191be04dbc0f1dff5f5793f, type: 3}
   _player: {fileID: 1417334750}
-  _viewRadius: 37
+  _viewRadius: 20
   _cellSize: 1
 --- !u!4 &625994242
 Transform:
@@ -406,8 +406,8 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
-  orthographic size: 5
+  orthographic: 1
+  orthographic size: 8.47
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
