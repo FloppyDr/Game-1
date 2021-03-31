@@ -15,9 +15,9 @@ class GridObject : MonoBehaviour
 
     private void Update()
     {
-        Vector3 destroyPoint = Camera.main.WorldToViewportPoint(gameObject.transform.position);
+       Vector3 destroyPoint = Camera.main.ViewportToWorldPoint(new Vector2(0, 0.5f));
 
-        if (destroyPoint.z < 0)
+        if (transform.position.z < destroyPoint.z)
         {
             Destroy(gameObject);
         }

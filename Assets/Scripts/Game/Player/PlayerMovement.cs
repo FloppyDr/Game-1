@@ -13,7 +13,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody _rigidbody;
     private SphereCollider _collider;
     private float _checkSphereRadius;
-
     private bool _isGrounded;
 
     private void Start()
@@ -35,6 +34,5 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         _isGrounded = Physics.CheckSphere(transform.position, _checkSphereRadius, _obstacleLayer);
-
     }
 }

@@ -5,21 +5,17 @@ using UnityEngine;
 public class CameraMover : MonoBehaviour
 {
     [SerializeField] private Transform _target;
-    // [SerializeField] private float _smoothSpeed = 1f;
 
-     private Vector3 _offset;
+    private Vector3 _offset;
 
     private void Start()
     {
-         _offset = _target.position - transform.position;
+        _offset = transform.position - _target.position;
     }
 
     private void LateUpdate()
     {
-        //if (_target == null)
-        //    return;
-
-        Vector3 desiredPosition = _target.position - _offset;
-        transform.position = Vector3.Lerp(transform.position, desiredPosition, 1);
+        Vector3 targetPosition = _target.position + _offset;
+        transform.position = Vector3.Lerp(transform.position, targetPosition, 1);
     }
 }
