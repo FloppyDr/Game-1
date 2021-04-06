@@ -13,13 +13,8 @@ class GridObject : MonoBehaviour
         _chance = Mathf.Clamp(_chance, 1, 100);
     }
 
-    private void Update()
+    public void Die()
     {
-       Vector3 destroyPoint = Camera.main.ViewportToWorldPoint(new Vector2(0, 0.5f));
-
-        if (transform.position.z < destroyPoint.z)
-        {
-            Destroy(gameObject);
-        }
+        Destroy(gameObject);
     }
 }
