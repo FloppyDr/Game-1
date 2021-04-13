@@ -38,16 +38,10 @@ public class About : MonoBehaviour
     private void HideWindow()
     {
         _animator.SetBool("IsShow", false);
-        //_aboutGroup.alpha = 0;
-        //_aboutGroup.interactable = false;
-        //_aboutGroup.blocksRaycasts = false;
     }
 
     public void ShowWindow()
     {
         _animator.SetBool("IsShow", true);
-        //_aboutGroup.alpha = 1;
-        //_aboutGroup.interactable = true;
-        //_aboutGroup.blocksRaycasts = true;
     }
 }
